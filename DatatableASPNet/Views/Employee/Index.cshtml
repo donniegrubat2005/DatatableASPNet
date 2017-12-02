@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "List of Employee";
+}
+<div class="container">
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+
+    </table>
+</div>
+<link href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+@section scripts {
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#employeeTable").DataTable(
+                {
+                    "ajax": {
+                        "url": "/Employee/GetEmployee",
+                        "type": "GET",
+                        "datatype": "json"
+                    }, "columns": [
+
+                        { "data": "FirstName" },
+                        { "data": "LastName" },
+                        { "data": "Address" },
+                        { "data": "Position" }
+                    ]
+                }
+            );
+        });
+    </script>
+ }

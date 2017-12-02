@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatatableASPNet", "DatatableASPNet\DatatableASPNet.csproj", "{BB2B31D1-C5F2-483D-A316-ABC16DA8DD7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB2B31D1-C5F2-483D-A316-ABC16DA8DD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB2B31D1-C5F2-483D-A316-ABC16DA8DD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB2B31D1-C5F2-483D-A316-ABC16DA8DD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB2B31D1-C5F2-483D-A316-ABC16DA8DD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E57B6D50-34BE-4288-BD65-368D08DEDF51}
+	EndGlobalSection
+EndGlobal
