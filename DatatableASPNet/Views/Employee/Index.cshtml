@@ -2,8 +2,8 @@
 @{
     ViewBag.Title = "List of Employee";
 }
-<div class="container">
-    <table id="employeeTable">
+<div class="row">
+    <table id="employeeTable" class="table table-condensed">
         <thead>
             <tr>
                 <th>First Name</th>
@@ -19,24 +19,5 @@
 
 @section scripts {
     <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $("#employeeTable").DataTable(
-                {
-                    "ajax": {
-                        "url": "/Employee/GetEmployee",
-                        "type": "GET",
-                        "datatype": "json"
-                    }, "columns": [
-
-                        { "data": "FirstName" },
-                        { "data": "LastName" },
-                        { "data": "Address" },
-                        { "data": "Position" }
-                    ]
-                }
-            );
-        });
-    </script>
- }
+    <script src="~/Scripts/javascript.js"></script>
+}

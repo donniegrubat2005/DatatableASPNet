@@ -9,7 +9,7 @@ namespace DatatableASPNet.Controllers
 {
     public class EmployeeController : Controller
     {
-        private EmployeeContext dbemployee = new EmployeeContext();
+        private DataContext dbemployee = new DataContext();
         // GET: Employee
         public ActionResult Index()
         {

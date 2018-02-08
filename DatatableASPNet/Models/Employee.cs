@@ -19,5 +19,6 @@ namespace DatatableASPNet.Models
         public string LastName { get; set; }
         public string Address { get; set; }
         public string Position { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
     }
 }
